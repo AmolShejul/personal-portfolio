@@ -63,20 +63,24 @@ export const Hero = () => {
                     </div>
                     {/*CTAs Call To Action*/}
                     <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                        <Button size="lg">
-                            Hire Me <ArrowRight className="w-5 h-5"/>
-                        </Button>
-                        <AnimatedBorderButton>
-                            <Download className="w-5 h-5" />
-                            Download Resume
-                        </AnimatedBorderButton>
+                        <a href="#projects">
+                            <Button size="lg">
+                                View My Work <ArrowRight className="w-5 h-5" />
+                            </Button>
+                        </a>
+                        <a href="/Amol_Shejul_Resume.pdf" download>
+                            <AnimatedBorderButton>
+                                <Download className="w-5 h-5" />
+                                Download Resume
+                            </AnimatedBorderButton>
+                        </a>
 
                         {/*Social Links*/}
                         <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                             <span className="text-sm text-muted-foreground">Connect with me: </span>
                             {[
                                 {icon: FaGithub, href: "https://github.com/AmolShejul"},
-                                {icon: FaLinkedin, href: "#"}
+                                {icon: FaLinkedin, href: "https://www.linkedin.com/in/amol-shejul-799141288/"}
                             ].map((social, idx) => (
                                 <a key={idx} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
                                     {<social.icon className="w-5 h-5"/>}</a>
