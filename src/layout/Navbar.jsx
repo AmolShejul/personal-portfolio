@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 
 const navLinks = [
     {href: "#about", label: "About"},
-    {href: "#projects", label: "projects"},
-    {href: "#experience", label: "experience"},
-    {href: "#education", label: "education"},    
+    {href: "#projects", label: "Projects"},
+    {href: "#experience", label: "Experience"},
+    {href: "#education", label: "Education"},
+    {href: "#contact", label: "Contact"},    
 ];
 
 export const Navbar = () => {
